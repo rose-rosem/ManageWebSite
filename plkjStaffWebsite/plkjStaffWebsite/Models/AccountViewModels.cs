@@ -48,10 +48,14 @@ namespace plkjStaffWebsite.Models
 
     public class LoginViewModel
     {
-        [Required]
+        //[Required]
         [Display(Name = "电子邮件")]
         [EmailAddress]
         public string Email { get; set; }
+
+        [Required]
+        [Display(Name = "用户名")]
+        public string UserName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
@@ -68,6 +72,10 @@ namespace plkjStaffWebsite.Models
         [EmailAddress]
         [Display(Name = "电子邮件")]
         public string Email { get; set; }
+
+        [Required]
+        [Display(Name = "用户名")]
+        public string UserNamr { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "{0} 必须至少包含 {2} 个字符。", MinimumLength = 6)]
