@@ -166,6 +166,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709080514310_InitialCreate.cs" />
+    <Compile Include="Migrations\201709080514310_InitialCreate.Designer.cs">
+      <DependentUpon>201709080514310_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709080531003_addfullnamr.cs" />
+    <Compile Include="Migrations\201709080531003_addfullnamr.Designer.cs">
+      <DependentUpon>201709080531003_addfullnamr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709080535513_gender.cs" />
+    <Compile Include="Migrations\201709080535513_gender.Designer.cs">
+      <DependentUpon>201709080535513_gender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -7689,6 +7702,17 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="AdminLTE-master\bower_components\moment\moment.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201709080514310_InitialCreate.resx">
+      <DependentUpon>201709080514310_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709080531003_addfullnamr.resx">
+      <DependentUpon>201709080531003_addfullnamr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709080535513_gender.resx">
+      <DependentUpon>201709080535513_gender.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

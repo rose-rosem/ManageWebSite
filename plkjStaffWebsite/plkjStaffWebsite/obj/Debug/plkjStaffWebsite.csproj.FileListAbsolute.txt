@@ -72,3 +72,7 @@ D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\bin\zh-Hans\Microsoft
 D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\obj\Debug\plkjStaffWebsite.csprojResolveAssemblyReference.cache
 D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\obj\Debug\plkjStaffWebsite.dll
 D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\obj\Debug\plkjStaffWebsite.pdb
+D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\obj\Debug\plkjStaffWebsite.Migrations.InitialCreate.resources
+D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\obj\Debug\plkjStaffWebsite.csproj.GenerateResource.Cache
+D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\obj\Debug\plkjStaffWebsite.Migrations.addfullnamr.resources
+D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\obj\Debug\plkjStaffWebsite.Migrations.gender.resources

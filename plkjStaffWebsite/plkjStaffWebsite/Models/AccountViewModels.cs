@@ -75,7 +75,14 @@ namespace plkjStaffWebsite.Models
 
         [Required]
         [Display(Name = "用户名")]
-        public string UserNamr { get; set; }
+        public string UserName { get; set; }
+
+        [Display(Name = "真实姓名"),Required]
+        public string FullName{get;set;}
+
+        [Display(Name="性别"),Required]
+        [Range(0, 1)]
+        public int Gender { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "{0} 必须至少包含 {2} 个字符。", MinimumLength = 6)]
