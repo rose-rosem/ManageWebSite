@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
@@ -17,6 +18,20 @@ namespace plkjStaffWebsite.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+
+        //男女下拉框选择
+        private List<SelectListItem> GetGenderList()
+        {
+            return new List<SelectListItem>(){
+                new SelectListItem{
+                    Text = "男",
+                    Value = "1",
+                },new SelectListItem{
+                    Text = "女",
+                    Value = "0",
+                }
+            };
+        }
 
         public AccountController()
         {
@@ -139,6 +154,8 @@ namespace plkjStaffWebsite.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+            //通过ViewBag传递
+            ViewBag.GenderList = GetGenderList();
             return View();
         }
 
@@ -151,6 +168,7 @@ namespace plkjStaffWebsite.Controllers
         {
             if (ModelState.IsValid)
             {
+                
                 var user = new ApplicationUser { UserName = model.UserName, Email = model.Email ,FullName = model.FullName, Gender = model.Gender};
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
