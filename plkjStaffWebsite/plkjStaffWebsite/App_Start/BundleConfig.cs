@@ -26,6 +26,19 @@ namespace plkjStaffWebsite
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/login/css").Include(
+                      "~/bower_components/bootstrap/dist/css/bootstrap.min.css",
+                      "~/bower_components/font-awesome/css/font-awesome.min.css",
+                      "~/bower_components/Ionicons/css/ionicons.min.css",
+                      "~/dist/css/AdminLTE.min.css",
+                      "~/plugins/iCheck/square/blue.css",
+                      "~/dist/css/fonts.css"));
+
+            bundles.Add(new ScriptBundle("~/login/js").Include(
+                     "~/bower_components/jquery/dist/jquery.min.js",
+                     "~/bower_components/bootstrap/dist/js/bootstrap.min.js",
+                     "~/plugins/iCheck/icheck.min.js"));
         }
     }
 }
