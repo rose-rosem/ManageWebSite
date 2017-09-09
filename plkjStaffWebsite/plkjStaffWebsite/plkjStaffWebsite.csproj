@@ -6763,6 +6763,7 @@
     <Content Include="dist\img\photo4.jpg" />
     <Content Include="dist\img\user1-128x128.jpg" />
     <Content Include="dist\img\user2-160x160.jpg" />
+    <Content Include="dist\img\user2-160x1601.jpg" />
     <Content Include="dist\img\user3-128x128.jpg" />
     <Content Include="dist\img\user4-128x128.jpg" />
     <Content Include="dist\img\user5-128x128.jpg" />
@@ -6775,7 +6776,9 @@
     <Content Include="dist\js\pages\dashboard.js" />
     <Content Include="dist\js\pages\dashboard2.js" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\ionicons.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="plugins\bootstrap-slider\bootstrap-slider.js" />
@@ -7512,6 +7515,10 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\ionicons.eot" />
+    <Content Include="fonts\ionicons.ttf" />
+    <Content Include="fonts\ionicons.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

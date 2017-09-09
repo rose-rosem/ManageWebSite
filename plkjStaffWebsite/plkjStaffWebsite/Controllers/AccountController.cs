@@ -101,7 +101,7 @@ namespace plkjStaffWebsite.Controllers
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "无效的登录尝试。");
+                    ModelState.AddModelError("", "用户名或密码错误，请重试！");
                     return View(model);
             }
         }
