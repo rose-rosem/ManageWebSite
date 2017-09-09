@@ -5,9 +5,11 @@ namespace plkjStaffWebsite
 {
     public class BundleConfig
     {
+
         // 有关绑定的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
@@ -26,14 +28,12 @@ namespace plkjStaffWebsite
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
-
             bundles.Add(new StyleBundle("~/login/css").Include(
                       "~/bower_components/bootstrap/dist/css/bootstrap.min.css",
-                      "~/bower_components/font-awesome/css/font-awesome.min.css",
+
                       "~/bower_components/Ionicons/css/ionicons.min.css",
                       "~/dist/css/AdminLTE.min.css",
-                      "~/plugins/iCheck/square/blue.css",
-                      "~/dist/css/fonts.css"));
+                      "~/dist/css/fonts.css").Include("~/bower_components/font-awesome/css/font-awesome.min.css", new CssRewriteUrlTransform()));
 
             bundles.Add(new ScriptBundle("~/login/js").Include(
                      "~/bower_components/jquery/dist/jquery.min.js",

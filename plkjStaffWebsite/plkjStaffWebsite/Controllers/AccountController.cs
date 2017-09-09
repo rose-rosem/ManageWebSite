@@ -108,7 +108,7 @@ namespace plkjStaffWebsite.Controllers
 
         //
         // GET: /Account/VerifyCode
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public async Task<ActionResult> VerifyCode(string provider, string returnUrl, bool rememberMe)
         {
             // 要求用户已通过使用用户名/密码或外部登录名登录
@@ -122,7 +122,7 @@ namespace plkjStaffWebsite.Controllers
         //
         // POST: /Account/VerifyCode
         [HttpPost]
-        [AllowAnonymous]
+        //[AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> VerifyCode(VerifyCodeViewModel model)
         {
@@ -151,7 +151,7 @@ namespace plkjStaffWebsite.Controllers
 
         //
         // GET: /Account/Register
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public ActionResult Register()
         {
             //通过ViewBag传递
@@ -162,7 +162,7 @@ namespace plkjStaffWebsite.Controllers
         //
         // POST: /Account/Register
         [HttpPost]
-        [AllowAnonymous]
+        //[AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
@@ -192,7 +192,7 @@ namespace plkjStaffWebsite.Controllers
 
         //
         // GET: /Account/ConfirmEmail
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public async Task<ActionResult> ConfirmEmail(string userId, string code)
         {
             if (userId == null || code == null)
@@ -205,7 +205,7 @@ namespace plkjStaffWebsite.Controllers
 
         //
         // GET: /Account/ForgotPassword
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public ActionResult ForgotPassword()
         {
             return View();
@@ -214,7 +214,7 @@ namespace plkjStaffWebsite.Controllers
         //
         // POST: /Account/ForgotPassword
         [HttpPost]
-        [AllowAnonymous]
+        //[AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> ForgotPassword(ForgotPasswordViewModel model)
         {
@@ -241,7 +241,7 @@ namespace plkjStaffWebsite.Controllers
 
         //
         // GET: /Account/ForgotPasswordConfirmation
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public ActionResult ForgotPasswordConfirmation()
         {
             return View();
@@ -249,7 +249,7 @@ namespace plkjStaffWebsite.Controllers
 
         //
         // GET: /Account/ResetPassword
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public ActionResult ResetPassword(string code)
         {
             return code == null ? View("Error") : View();
@@ -258,7 +258,7 @@ namespace plkjStaffWebsite.Controllers
         //
         // POST: /Account/ResetPassword
         [HttpPost]
-        [AllowAnonymous]
+        //[AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> ResetPassword(ResetPasswordViewModel model)
         {
@@ -283,7 +283,7 @@ namespace plkjStaffWebsite.Controllers
 
         //
         // GET: /Account/ResetPasswordConfirmation
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public ActionResult ResetPasswordConfirmation()
         {
             return View();
@@ -292,7 +292,7 @@ namespace plkjStaffWebsite.Controllers
         //
         // POST: /Account/ExternalLogin
         [HttpPost]
-        [AllowAnonymous]
+        //[AllowAnonymous]
         [ValidateAntiForgeryToken]
         public ActionResult ExternalLogin(string provider, string returnUrl)
         {
@@ -302,7 +302,7 @@ namespace plkjStaffWebsite.Controllers
 
         //
         // GET: /Account/SendCode
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public async Task<ActionResult> SendCode(string returnUrl, bool rememberMe)
         {
             var userId = await SignInManager.GetVerifiedUserIdAsync();
@@ -318,7 +318,7 @@ namespace plkjStaffWebsite.Controllers
         //
         // POST: /Account/SendCode
         [HttpPost]
-        [AllowAnonymous]
+        //[AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> SendCode(SendCodeViewModel model)
         {
@@ -337,7 +337,7 @@ namespace plkjStaffWebsite.Controllers
 
         //
         // GET: /Account/ExternalLoginCallback
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public async Task<ActionResult> ExternalLoginCallback(string returnUrl)
         {
             var loginInfo = await AuthenticationManager.GetExternalLoginInfoAsync();
@@ -368,7 +368,7 @@ namespace plkjStaffWebsite.Controllers
         //
         // POST: /Account/ExternalLoginConfirmation
         [HttpPost]
-        [AllowAnonymous]
+        //[AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> ExternalLoginConfirmation(ExternalLoginConfirmationViewModel model, string returnUrl)
         {
@@ -415,7 +415,7 @@ namespace plkjStaffWebsite.Controllers
 
         //
         // GET: /Account/ExternalLoginFailure
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public ActionResult ExternalLoginFailure()
         {
             return View();
