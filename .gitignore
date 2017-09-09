@@ -1,10 +1,6 @@
-
 *.suo
-*.mdf
-*.ldf
-*.dll
-*.pdb
-*.cache
-*.txt
-*.dll
-*.pdb
+*.user
+_ReSharper.*
+bin
+obj
+packages
