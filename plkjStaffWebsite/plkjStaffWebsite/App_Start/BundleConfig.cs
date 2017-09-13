@@ -64,7 +64,9 @@ namespace plkjStaffWebsite
                      "~/bower_components/fastclick/lib/fastclick.js",
                      "~/dist/js/adminlte.min.js",
                      "~/dist/js/pages/dashboard.js",
-                     "~/dist/js/demo.js")); 
+                     "~/dist/js/demo.js"));
+
+            BundleTable.EnableOptimizations = true;
          
         }
     }

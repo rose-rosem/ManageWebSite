@@ -75,4 +75,3 @@ D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\obj\Debug\plkjStaffWe
 D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\obj\Debug\plkjStaffWebsite.csproj.GenerateResource.Cache
 D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\obj\Debug\plkjStaffWebsite.Migrations.addfullnamr.resources
 D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\obj\Debug\plkjStaffWebsite.Migrations.gender.resources
-D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\obj\Debug\plkjStaffWebsite.csprojResolveAssemblyReference.cache

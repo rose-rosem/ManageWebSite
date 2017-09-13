@@ -1,58 +1,12 @@
-﻿@*<!DOCTYPE html>
-    <html>
-    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
-        @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
-
-    </head>
-    <body>
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    @Html.ActionLink("应用程序名称", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("主页", "Index", "Home")</li>
-                        <li>@Html.ActionLink("关于", "About", "Home")</li>
-                        <li>@Html.ActionLink("联系方式", "Contact", "Home")</li>
-                    </ul>
-                    @Html.Partial("_LoginPartial")
-                </div>
-            </div>
-        </div>
-        <div class="container body-content">
-            @RenderBody()
-            <hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
-            </footer>
-        </div>
-
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
-    </body>
-    </html>*@
-
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@ViewBag.Title - Baconlocke</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>@ViewBag.Title - Baconlocke</title>
+
 
     @Styles.Render("~/login/css")
     @Styles.Render("~/layout/css")
@@ -80,7 +34,7 @@
 
             <nav class="navbar navbar-static-top">
                 <!-- Sidebar toggle button-->
-                <a href="javascript:;" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <a href="javascript:void(0)" class="sidebar-toggle" data-toggle="push-menu" role="button">
                     <span class="sr-only">Toggle navigation</span>
                 </a>
                 <div class="navbar-custom-menu">
@@ -100,7 +54,7 @@
                 <!-- search form -->
                 <form action="#" method="get" class="sidebar-form">
                     <div class="input-group">
-                        <input type="text" name="q" class="form-control" placeholder="Search...">
+                        <input type="text" name="q" class="form-control" placeholder="搜索...">
                         <span class="input-group-btn">
                             <button type="submit" name="search" id="search-btn" class="btn btn-flat">
                                 <i class="fa fa-search"></i>
@@ -113,27 +67,27 @@
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">主菜单</li>
                     <li class="active treeview">
-                        <a href="#">
-                            <i class="fa fa-dashboard"></i> <span>待办事项</span>
+                        <a href="@Url.Action("Index","Home")">
+                            <i class="fa fa-dashboard"></i> <span>首页</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
-                        <ul class="treeview-menu">
-                            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> 已办</a></li>
-                            <li><a href="index2.html"><i class="fa fa-circle-o"></i> 未办</a></li>
-                        </ul>
+                        @*<ul class="treeview-menu">
+                            <li class="active"><a href="javascript:void(0)"><i class="fa fa-circle-o text-red"></i> 已办</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-circle-o text-blue"></i> 未办</a></li>
+                        </ul>*@
                     </li>
                     <li>
-                        <a href="pages/widgets.html">
+                        <a href="javascript:void(0)">
                             <i class="fa fa-th"></i> <span>小工具(网格布局)</span>
                             <span class="pull-right-container">
-                                <small class="label pull-right bg-green">new</small>
+                                <small class="label pull-right bg-green">null</small>
                             </span>
                         </a>
                     </li>
                     <li class="treeview">
-                        <a href="#">
+                        <a href="javascript:void(0)">
                             <i class="fa fa-pie-chart"></i>
                             <span>图表</span>
                             <span class="pull-right-container">
@@ -141,14 +95,11 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-                            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-                            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-                            <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> ChartJS</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
-                        <a href="#">
+                        <a href="javascript:void(0)">
                             <i class="fa fa-laptop"></i>
                             <span>UI 元素</span>
                             <span class="pull-right-container">
@@ -156,41 +107,34 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-                            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-                            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-                            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-                            <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-                            <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> General</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
-                        <a href="#">
+                        <a href="javascript:void(0)">
                             <i class="fa fa-edit"></i> <span>表单</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-                            <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-                            <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> General Elements</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
-                        <a href="#">
+                        <a href="javascript:void(0)">
                             <i class="fa fa-table"></i> <span>表格</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-                            <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Data tables</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="pages/calendar.html">
+                        <a href="javascript:void(0)">
                             <i class="fa fa-calendar"></i> <span>日历</span>
                             <span class="pull-right-container">
                                 <small class="label pull-right bg-red">3</small>
@@ -199,7 +143,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="pages/mailbox/mailbox.html">
+                        <a href="javascript:void(0)">
                             <i class="fa fa-envelope"></i> <span>邮箱</span>
                             <span class="pull-right-container">
                                 <small class="label pull-right bg-yellow">12</small>
@@ -209,60 +153,52 @@
                         </a>
                     </li>
                     <li class="treeview">
-                        <a href="#">
+                        <a href="javascript:void(0)">
                             <i class="fa fa-folder"></i> <span>例子</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-                            <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-                            <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-                            <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-                            <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-                            <li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-                            <li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-                            <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-                            <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Invoice</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
-                        <a href="#">
+                        <a href="javascript:void(0)">
                             <i class="fa fa-share"></i> <span>多级菜单</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Level One</a></li>
                             <li class="treeview">
-                                <a href="#">
+                                <a href="javascript:void(0)">
                                     <i class="fa fa-circle-o"></i> Level One
                                     <span class="pull-right-container">
                                         <i class="fa fa-angle-left pull-right"></i>
                                     </span>
                                 </a>
                                 <ul class="treeview-menu">
-                                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
+                                    <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Level Two</a></li>
                                     <li class="treeview">
-                                        <a href="#">
+                                        <a href="javascript:void(0)">
                                             <i class="fa fa-circle-o"></i> Level Two
                                             <span class="pull-right-container">
                                                 <i class="fa fa-angle-left pull-right"></i>
                                             </span>
                                         </a>
                                         <ul class="treeview-menu">
-                                            <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                            <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Level Three</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Level One</a></li>
                         </ul>
                     </li>
-                    <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>帮助文档</span></a></li>
+                    <li><a href="http://www.pl-kj.com/help.html"><i class="fa fa-book"></i> <span>帮助文档</span></a></li>
                     @*<li class="header">LABELS</li>
                     <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
                     <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
@@ -294,7 +230,7 @@
             <div class="tab-content">
                 <!-- Home tab content -->
                 <div class="tab-pane" id="control-sidebar-home-tab">
-                    <h3 class="control-sidebar-heading">Recent Activity</h3>
+                    <h3 class="control-sidebar-heading">近期活动</h3>
                     <ul class="control-sidebar-menu">
                         <li>
                             <a href="javascript:void(0)">
@@ -334,12 +270,12 @@
                         </li>
                     </ul>
                     <!-- /.control-sidebar-menu -->
-                    <h3 class="control-sidebar-heading">Tasks Progress</h3>
+                    <h3 class="control-sidebar-heading">任务进度</h3>
                     <ul class="control-sidebar-menu">
                         <li>
                             <a href="javascript:void(0)">
                                 <h4 class="control-sidebar-subheading">
-                                    Custom Template Design
+                                    自定义模板设计
                                     <span class="label label-danger pull-right">70%</span>
                                 </h4>
                                 <div class="progress progress-xxs">
@@ -350,7 +286,7 @@
                         <li>
                             <a href="javascript:void(0)">
                                 <h4 class="control-sidebar-subheading">
-                                    Update Resume
+                                    更新
                                     <span class="label label-success pull-right">95%</span>
                                 </h4>
                                 <div class="progress progress-xxs">
@@ -361,7 +297,7 @@
                         <li>
                             <a href="javascript:void(0)">
                                 <h4 class="control-sidebar-subheading">
-                                    Laravel Integration
+                                    等级
                                     <span class="label label-warning pull-right">50%</span>
                                 </h4>
                                 <div class="progress progress-xxs">
@@ -372,7 +308,7 @@
                         <li>
                             <a href="javascript:void(0)">
                                 <h4 class="control-sidebar-subheading">
-                                    Back End Framework
+                                    后端框架
                                     <span class="label label-primary pull-right">68%</span>
                                 </h4>
                                 <div class="progress progress-xxs">
@@ -385,60 +321,60 @@
                 </div>
                 <!-- /.tab-pane -->
                 <!-- Stats tab content -->
-                <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+                <div class="tab-pane" id="control-sidebar-stats-tab">统计标签内容</div>
                 <!-- /.tab-pane -->
                 <!-- Settings tab content -->
                 <div class="tab-pane" id="control-sidebar-settings-tab">
                     <form method="post">
-                        <h3 class="control-sidebar-heading">General Settings</h3>
+                        <h3 class="control-sidebar-heading">常规设置</h3>
                         <div class="form-group">
                             <label class="control-sidebar-subheading">
-                                Report panel usage
+                                报告面板使用
                                 <input type="checkbox" class="pull-right" checked>
                             </label>
                             <p>
-                                Some information about this general settings option
+                                有关此常规设置选项的一些信息
                             </p>
                         </div>
                         <!-- /.form-group -->
                         <div class="form-group">
                             <label class="control-sidebar-subheading">
-                                Allow mail redirect
+                                允许邮件重定向
                                 <input type="checkbox" class="pull-right" checked>
                             </label>
                             <p>
-                                Other sets of options are available
+                                其他选项可用
                             </p>
                         </div>
                         <!-- /.form-group -->
                         <div class="form-group">
                             <label class="control-sidebar-subheading">
-                                Expose author name in posts
+                                在帖子中显示作者姓名
                                 <input type="checkbox" class="pull-right" checked>
                             </label>
                             <p>
-                                Allow the user to show his name in blog posts
+                                允许用户在博客帖子中显示他的名字
                             </p>
                         </div>
                         <!-- /.form-group -->
-                        <h3 class="control-sidebar-heading">Chat Settings</h3>
+                        <h3 class="control-sidebar-heading">聊天设置</h3>
                         <div class="form-group">
                             <label class="control-sidebar-subheading">
-                                Show me as online
+                                在线显示我
                                 <input type="checkbox" class="pull-right" checked>
                             </label>
                         </div>
                         <!-- /.form-group -->
                         <div class="form-group">
                             <label class="control-sidebar-subheading">
-                                Turn off notifications
+                                关闭通知
                                 <input type="checkbox" class="pull-right">
                             </label>
                         </div>
                         <!-- /.form-group -->
                         <div class="form-group">
                             <label class="control-sidebar-subheading">
-                                Delete chat history
+                                删除聊天记录
                                 <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
                             </label>
                         </div>
@@ -456,15 +392,14 @@
     <!-- ./wrapper -->
 
     <!-- jQuery 3 -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="~/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
-    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/bower_components/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
         $.widget.bridge('uibutton', $.ui.button);
     </script>
 
     @Scripts.Render("~/layout/js")
-
 </body>
 </html>
