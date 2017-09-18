@@ -42,6 +42,7 @@ namespace plkjStaffWebsite
 
             bundles.Add(new StyleBundle("~/layout/css").Include(
                      "~/dist/css/skins/_all-skins.min.css",
+                     "~/dist/css/customer.css",
                      "~/bower_components/morris.js/morris.css",
                      "~/bower_components/jvectormap/jquery-jvectormap.css",
                      "~/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css",

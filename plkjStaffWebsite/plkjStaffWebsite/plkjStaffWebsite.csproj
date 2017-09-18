@@ -6714,6 +6714,7 @@
     <Content Include="dist\css\alt\AdminLTE-select2.min.css" />
     <Content Include="dist\css\alt\AdminLTE-without-plugins.css" />
     <Content Include="dist\css\alt\AdminLTE-without-plugins.min.css" />
+    <Content Include="dist\css\customer.css" />
     <Content Include="dist\css\fonts.css" />
     <Content Include="dist\css\skins\skin-black-light.css" />
     <Content Include="dist\css\skins\skin-black-light.min.css" />
@@ -6741,6 +6742,7 @@
     <Content Include="dist\css\skins\skin-yellow.min.css" />
     <Content Include="dist\css\skins\_all-skins.css" />
     <Content Include="dist\css\skins\_all-skins.min.css" />
+    <Content Include="dist\img\arrange.png" />
     <Content Include="dist\img\avatar.png" />
     <Content Include="dist\img\avatar04.png" />
     <Content Include="dist\img\avatar2.png" />
@@ -6749,6 +6751,7 @@
     <Content Include="dist\img\bg-lottery.png" />
     <Content Include="dist\img\boxed-bg.jpg" />
     <Content Include="dist\img\boxed-bg.png" />
+    <Content Include="dist\img\corrections.png" />
     <Content Include="dist\img\credit\american-express.png" />
     <Content Include="dist\img\credit\cirrus.png" />
     <Content Include="dist\img\credit\mastercard.png" />
@@ -6757,6 +6760,8 @@
     <Content Include="dist\img\credit\paypal2.png" />
     <Content Include="dist\img\credit\visa.png" />
     <Content Include="dist\img\default-50x50.gif" />
+    <Content Include="dist\img\entry.png" />
+    <Content Include="dist\img\gift.png" />
     <Content Include="dist\img\icons.png" />
     <Content Include="dist\img\ly-plate-c.gif" />
     <Content Include="dist\img\photo1.png" />
@@ -7573,6 +7578,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\DataPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

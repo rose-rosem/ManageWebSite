@@ -1,0 +1,145 @@
+﻿.platform {
+    border: 1px solid #eee;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #eee, -1px -1px 3px #eee;
+    background-color: #fff;
+    padding-bottom: 20px;
+    /*height: 450px;*/
+}
+
+    .platform img {
+        width: 100%;
+    }
+
+    .platform .desc {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .platform a {
+        display: block;
+        margin: 0 auto;
+        width: 142px;
+        height: 30px;
+        background-color: #0086e5;
+        font-size: 14px;
+        color: #fff;
+        padding: 5px 55px;
+        border-radius: 15px;
+    }
+
+    .platform ul {
+        min-height: 140px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .platform li {
+        line-height: 2;
+        font-size: 14px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .platform h3 {
+        margin: 20px 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+
+@media (max-width: 768px) {
+    .platform {
+        max-width: 90%;
+        /*max-height:200px;*/
+    }
+
+        .platform:nth-child(1) {
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .platform:nth-child(2) {
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        .platform:nth-child(3) {
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+}
+
+@media (min-width: 768px) {
+    .platform {
+        max-width: 45%;
+    }
+
+        .platform:nth-child(1) {
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .platform:nth-child(2) {
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        .platform:nth-child(3) {
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+}
+
+@media (min-width: 992px) {
+    .platform {
+        max-width: 47%;
+    }
+
+        .platform:nth-child(1) {
+            margin-right: 20px;
+            margin-bottom: 50px;
+        }
+
+        .platform:nth-child(2) {
+            margin-bottom: 50px;
+            margin-right: 20px;
+        }
+
+        .platform:nth-child(3) {
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+    .platform {
+        max-width: 23%;
+    }
+
+        .platform:nth-child(1) {
+            margin-right: 20px;
+        }
+
+        .platform:nth-child(2) {
+            margin-bottom: 20px;
+        }
+
+        .platform:nth-child(3) {
+            margin-bottom: 20px;
+        }
+}
+
+@media (min-width: 1650px) {
+    .platform {
+        max-width: 322px;
+    }
+}
+
+/*@media (max-width: 99px) {
+    .platform {
+        max-width: 45%;
+    }
+}*/
