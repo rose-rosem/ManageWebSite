@@ -7,22 +7,12 @@ using System.Web.Mvc;
 namespace plkjStaffWebsite.Controllers
 {
     [Authorize]
-    public class HomeController : Controller
+    public class DataPageController : Controller
     {
+        // GET: DataPage
         public ActionResult Index()
         {
             return View();
         }
-
-        public ActionResult About()
-        {
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            return View();
-        }
-
     }
 }
