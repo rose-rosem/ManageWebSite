@@ -41,6 +41,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HankClassLibrary">
+      <HintPath>..\..\..\plkjClassLibrary\bin\Debug\HankClassLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -6712,6 +6715,7 @@
     <Content Include="bower_components\select2\vendor\jquery-2.1.0.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\dowload.css" />
     <Content Include="dist\css\AdminLTE.css" />
     <Content Include="dist\css\AdminLTE.min.css" />
     <Content Include="dist\css\alt\AdminLTE-bootstrap-social.css" />
@@ -6767,6 +6771,7 @@
     <Content Include="dist\img\credit\paypal.png" />
     <Content Include="dist\img\credit\paypal2.png" />
     <Content Include="dist\img\credit\visa.png" />
+    <Content Include="dist\img\dataBanner.png" />
     <Content Include="dist\img\default-50x50.gif" />
     <Content Include="dist\img\entry.png" />
     <Content Include="dist\img\gift.png" />
