@@ -7,7 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using HankClassLibrary;
 
-namespace plkjStaffWebsite.Views.DataPage
+namespace plkjStaffWebsite.Views.Data
 {
     public partial class Index : System.Web.Mvc.ViewPage
     {
@@ -41,6 +41,7 @@ namespace plkjStaffWebsite.Views.DataPage
                 hankFile.hankLog(HankWcf.wcfError);
             }
         }
+
         private void 查看待整错题数()
         {
             Dictionary<String, String> dic = new Dictionary<string, string>();

@@ -6,10 +6,9 @@ using System.Web.Mvc;
 
 namespace plkjStaffWebsite.Controllers
 {
-    [Authorize]
-    public class DataPageController : Controller
+    public class DataController : Controller
     {
-        // GET: DataPage
+        // GET: Data
         public ActionResult Index()
         {
             return View();

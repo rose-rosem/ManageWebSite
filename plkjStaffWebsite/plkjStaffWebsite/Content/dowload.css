@@ -1,126 +1,16 @@
-﻿* {
-    margin: 0;
-    padding: 0;
+﻿.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
+    background-color: #f7f8fb !important;
 }
 
-a {
-    text-decoration: none;
-    color: #373D41;
-    font-size: 15px;
-}
-
-    a:hover {
-        color: #00a2ca;
-        cursor:pointer;
-    }
-
-ul, li {
-    list-style: none;
-    border: 0;
-    outline: none;
-}
-
-.dowloadBG {
-    height: 150px;
-    background-color: #f9f9f9;
-    border-bottom: 1px solid #e8eaec;
-    background-image: url('../img/dowloadBG.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.dataBG {
-    height: 150px;
-    background-color: #f9f9f9;
-    border-bottom: 1px solid #e8eaec;
-    background-image: url('../dist/img/dataBanner.png');
-    background-size: cover;
-    background-position: center;
-    opacity: .85;
-}
-
-
-.main-content {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.main-title {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border-bottom: solid 1px #e1e1df;
-    height: 20px;
-}
-
-    .main-title h1 {
-        font-size: 24px;
-        float: left;
-        padding-right: 10px;
-        background: #fff;
-    }
-
-.main-icon ul li {
-    float: left;
-    width: 10%;
-    margin-right: 5%;
-}
-
-.main-icon1 ul li {
-    width: auto;
-}
-
-.main-icon1 li p {
-    font-size: 17px;
-    text-align: center;
-    margin-top: 10px;
-    color:darkblue;
-}
-
-.table-title {
-    height: 35px;
-    width: auto;
-}
-
-.main-icon ul li a {
-    background: #fff;
-    height: 80px;
-    cursor: pointer;
-    text-decoration: none !important;
-}
-
-.main-icon ul li img {
-    width: 64px;
-    margin-top: 13px;
-    margin-left: 25%;
-    margin-right: 7%;
-    margin-bottom: 10%;
-}
 
 table {
     border-collapse: collapse;
     border: solid 1px Black;
 }
 
-    table td,th{
+    table td, th {
         border: solid 1px Black;
-        padding: 5px 10px; 
-        text-align:center;
-        font-size:15px;
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 17px;
     }
-
-.main-a{
-    height:20px;
-    margin-top:10px;
-}
-.main-a ul li{
-    float:left;
-    width:5%;
-    margin-right:2%;
-}
-.main-a ul li a{
-    text-decoration:underline;
-    color:darkblue;
-}
-.main-a ul li a:hover{
-    color:blue;
-}

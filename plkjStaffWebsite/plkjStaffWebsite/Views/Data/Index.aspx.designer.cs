@@ -7,7 +7,7 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace plkjStaffWebsite.Views.DataPage {
+namespace plkjStaffWebsite.Views.Data {
     
     
     public partial class Index {
