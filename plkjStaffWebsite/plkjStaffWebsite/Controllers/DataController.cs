@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace plkjStaffWebsite.Controllers
 {
+    [Authorize]
     public class DataController : Controller
     {
         // GET: Data

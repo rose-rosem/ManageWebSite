@@ -1,11 +1,8 @@
-﻿.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
-    background-color: #f7f8fb !important;
-}
-
-
+﻿
 table {
     border-collapse: collapse;
     border: solid 1px Black;
+    margin:0 auto;
 }
 
     table td, th {

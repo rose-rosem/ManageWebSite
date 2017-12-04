@@ -41,7 +41,6 @@ namespace plkjStaffWebsite.Views.Data
                 hankFile.hankLog(HankWcf.wcfError);
             }
         }
-
         private void 查看待整错题数()
         {
             Dictionary<String, String> dic = new Dictionary<string, string>();
