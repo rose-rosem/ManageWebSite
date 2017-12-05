@@ -81,4 +81,3 @@ D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\bin\Oraycn.MCapture.d
 D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\bin\Oraycn.MFile.dll
 D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\bin\ESBasic.dll
 D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\bin\HankClassLibrary.pdb
-D:\plkjgit\ManageWebsite\plkjStaffWebsite\plkjStaffWebsite\obj\Debug\plkjStaffWebsite.csprojResolveAssemblyReference.cache

@@ -11,12 +11,22 @@ namespace plkjStaffWebsite.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class zq_CustomerTable
     {
+
         public int id { get; set; }
+
+        [Required]
+        [Display(Name = "客户姓名")]
         public string customerName { get; set; }
+
+        [Required]
+        [Display(Name = "客户电话")]
         public string customerPhone { get; set; }
+
+        [Display(Name = "客户留言")]
         public string customerMessage { get; set; }
     }
 }
