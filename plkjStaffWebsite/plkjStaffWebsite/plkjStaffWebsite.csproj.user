@@ -11,6 +11,7 @@
     <WebStackScaffolding_DbContextTypeFullName>plkjStaffWebsite.Models.InformEntities</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
     <ProjectView>ProjectFiles</ProjectView>
+    <NameOfLastUsedPublishProfile>pomolo</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
