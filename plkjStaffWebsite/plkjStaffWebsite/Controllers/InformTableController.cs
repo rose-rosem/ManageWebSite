@@ -20,6 +20,10 @@ namespace plkjStaffWebsite.Controllers
             return View(db.zq_InformTable.ToList());
         }
 
+        public ActionResult Iframe()
+        {
+            return View(db.zq_InformTable.ToList());
+        }
         // GET: InformTable/Details/5
         public ActionResult Details(int? id)
         {

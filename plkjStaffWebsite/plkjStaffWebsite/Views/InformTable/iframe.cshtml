@@ -1,0 +1,49 @@
+﻿@model IEnumerable<plkjStaffWebsite.Models.zq_InformTable>
+
+@{
+    ViewBag.Title = "通知信息表";
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="~/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.inform)：
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="color:blue;">
+                    @Html.DisplayFor(modelItem => item.inform)
+                </td>
+            </tr>
+        }
+
+    </table>
+    <!-- /.row -->
+
+
+</body>
+</html>
+
+
+
+
+
+
