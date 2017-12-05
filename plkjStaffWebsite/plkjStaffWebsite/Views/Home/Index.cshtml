@@ -3,249 +3,289 @@
     ViewBag.Title = "首页";
 }
 
-
-<!-- Content Header (Page header) -->
-<section class="content-header">
-    <h1>
-        仪表盘
-        <small>控制面板</small>
-    </h1>
-    <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
-        <li class="active">仪表盘</li>
-    </ol>
-</section>
-<!-- Main content -->
-<section class="content">
-    <!-- Small boxes (Stat box) -->
-    <div class="row">
-        <div class="col-lg-3 col-xs-6">
-            <!-- small box -->
-            <div class="small-box bg-aqua">
-                <div class="inner">
-                    <h3>Four</h3>
-                    <p>常用工具下载</p>
-                </div>
-                <div class="icon">
-                    <i class="ion ion-bag"></i>
-                </div>
-                <a href="@Url.Action("Contact","Home")" class="small-box-footer">跳转 <i class="fa fa-arrow-circle-right"></i></a>
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="~/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>培洛科技</p>
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-            <!-- small box -->
-            <div class="small-box bg-green">
-                <div class="inner">
-                    <h3>Data</h3>
-                    <p>每日数据</p>
-                </div>
-                <div class="icon">
-                    <i class="ion ion-stats-bars"></i>
-                </div>
-                <a href="@Url.Action("Index", "Data")" target="_Blank" class="small-box-footer">跳转<i class="fa fa-arrow-circle-right"></i></a>
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="不能用的搜索">
+                <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
             </div>
+        </form>
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="active">
+                <a href="@Url.Action("Index","Home")">
+                    <i class="fa fa-dashboard"></i> <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Contact","Home")">
+                    <i class="fa fa-th"></i> <span>下载中心</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Data")">
+                    <i class="fa fa-pie-chart"></i> <span>每日数据</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="fa fa-laptop"></i> <span>注册账号</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("About", "Home")">
+                    <i class="fa fa-edit"></i> <span>幸运抽奖</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.pl-kj.com/excel.htm">
+                    <i class="fa fa-calendar"></i> <span>排班表</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "InformTable")">
+                    <i class="fa fa-table"></i> <span>客户表</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "zq_CustomerTable")">
+                    <i class="fa fa-table"></i> <span>通知公告</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Editor", "Home")">
+                    <i class="fa fa-circle-o"></i> <span>编辑器</span>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            仪表盘
+            <small>控制面板</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li class="active">仪表盘</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+            <div class="col-lg-3 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-aqua">
+                    <div class="inner">
+                        <h3>Four</h3>
+                        <p>常用工具下载</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-bag"></i>
+                    </div>
+                    <a href="@Url.Action("Contact","Home")" class="small-box-footer">跳转 <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-green">
+                    <div class="inner">
+                        <h3>Data</h3>
+                        <p>每日数据</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-stats-bars"></i>
+                    </div>
+                    <a href="@Url.Action("Index", "Data")" target="_Blank" class="small-box-footer">跳转<i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-yellow">
+                    <div class="inner">
+                        <h3>New</h3>
+                        <p>教师账号注册</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-person-add"></i>
+                    </div>
+                    <a href="javascript:void(0)" class="small-box-footer">跳转<i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-red">
+                    <div class="inner">
+                        <h3>Six</h3>
+                        <p>幸运大抽奖</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-pie-graph"></i>
+                    </div>
+                    <a href="@Url.Action("About","Home")" class="small-box-footer">跳转<i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
         </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-            <!-- small box -->
-            <div class="small-box bg-yellow">
-                <div class="inner">
-                    <h3>New</h3>
-                    <p>教师账号注册</p>
-                </div>
-                <div class="icon">
-                    <i class="ion ion-person-add"></i>
-                </div>
-                <a href="javascript:void(0)" class="small-box-footer">跳转<i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-            <!-- small box -->
-            <div class="small-box bg-red">
-                <div class="inner">
-                    <h3>Six</h3>
-                    <p>幸运大抽奖</p>
-                </div>
-                <div class="icon">
-                    <i class="ion ion-pie-graph"></i>
-                </div>
-                <a href="@Url.Action("About","Home")" class="small-box-footer">跳转<i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-        <!-- ./col -->
-    </div>
-    <!-- /.row -->
-    <!-- Main row -->
-    <div class="row">
-        <!-- Left col -->
-        <section class="col-lg-6 connectedSortable">
+        <!-- /.row -->
+        <!-- Main row -->
+        <div class="row">
+            <!-- Left col -->
+            <section class="col-lg-6 connectedSortable">
 
-            <!-- quick email widget -->
-            <div class="box box-info">
-                <div class="box-header">
-                    <i class="fa fa-bullhorn"></i>
-                    <h3 class="box-title">通知公告</h3>
-                </div>
-                <div class="box-body">
+                <!-- quick email widget -->
+                <div class="box box-info">
+                    <div class="box-header">
+                        <i class="fa fa-bullhorn"></i>
+                        <h3 class="box-title">通知公告</h3>
+                    </div>
+                    <div class="box-body">
 
+                    </div>
+                    @*<div class="box-footer clearfix">
+                            <button type="button" class="pull-right btn btn-default" id="sendEmail">
+                                Send
+                                <i class="fa fa-arrow-circle-right"></i>
+                            </button>
+                        </div>*@
                 </div>
-                @*<div class="box-footer clearfix">
-                        <button type="button" class="pull-right btn btn-default" id="sendEmail">
-                            Send
-                            <i class="fa fa-arrow-circle-right"></i>
-                        </button>
-                    </div>*@
-            </div>
 
-            <div class="box box-default">
-                <div class="box-header">
-                    <i class="fa fa-table"></i>
-                    <h3 class="box-title">客户表</h3>
-                </div>
-                <div class="box-body">
-                    <table class="table">
-                        <tr>
-                            <th>
-                                @Html.DisplayNameFor(model => model.customerName)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.customerPhone)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.customerMessage)
-                            </th>
-                            <th></th>
-                        </tr>
-
-                        @foreach (var item in Model)
-                        {
+                <div class="box box-default">
+                    <div class="box-header">
+                        <i class="fa fa-table"></i>
+                        <h3 class="box-title">客户表</h3>
+                    </div>
+                    <div class="box-body">
+                        <table class="table">
                             <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.customerName)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.customerPhone)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.customerMessage)
-                                </td>
-                                <td>
-                                    @Html.ActionLink("编辑", "Edit", new { id = item.id }) 
-                                    @*@Html.ActionLink("Details", "Details", new { id = item.id }) |
-                                    @Html.ActionLink("Delete", "Delete", new { id = item.id })*@
-                                </td>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.customerName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.customerPhone)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.customerMessage)
+                                </th>
+                                <th></th>
                             </tr>
-                        }
 
-                    </table>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.customerName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.customerPhone)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.customerMessage)
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("编辑", "Edit", new { id = item.id })
+                                        @*@Html.ActionLink("Details", "Details", new { id = item.id }) |
+                                            @Html.ActionLink("Delete", "Delete", new { id = item.id })*@
+                                    </td>
+                                </tr>
+                            }
 
-                </div>
-                @*<div class="box-footer clearfix">
-                <button type="button" class="pull-right btn btn-default" id="sendEmail">
-                    Send
-                    <i class="fa fa-arrow-circle-right"></i>
-                </button>
-            </div>*@
-            </div>
-            <!-- Custom tabs (Charts with tabs)-->
-            @*<div class="nav-tabs-custom">
-                <!-- Tabs within a box -->
-                <ul class="nav nav-tabs pull-right">
-                    <li class="active"><a href="#revenue-chart" data-toggle="tab">未办</a></li>
-                    <li><a href="#sales-chart" data-toggle="tab">已办</a></li>
-                    <li class="pull-left header"><i class="ion ion-clipboard"></i> 待办事项</li>
-                </ul>
-                <div class="tab-content no-padding">
-                    <!-- Morris chart - Sales -->
-                    <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 300px;">
-
-                    </div>
-                    <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;">
-
+                        </table>
                     </div>
                 </div>
-            </div>*@
-        </section>
-        <!-- /.Left col -->
-        <!-- right col (We are only adding the ID to make the widgets sortable)-->
-        <section class="col-lg-6 connectedSortable">
-            <!-- TO DO List -->
-            <div class="box box-primary">
-                <div class="box-header">
-                    <i class="fa fa-users"></i>
-                    <h3 class="box-title">排班表</h3>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body">
-                    <!-- See dist/js/pages/dashboard.js to activate the todoList plugin -->
-                    <iframe src="http://www.pl-kj.com/NO1.htm" style="width:100%;height:380px;border:none;" id="excel"></iframe>
-                </div>
-                <!-- /.box-body -->
-                @*<div class="box-footer clearfix no-border">
-                        <button type="button" class="btn btn-default pull-right"><i class="fa fa-plus"></i> Add item</button>
-                    </div>*@
-            </div>
-            <!-- /.box -->
-            <!-- Calendar -->
-            <div class="box box-solid bg-green-gradient">
-                <div class="box-header">
-                    <i class="fa fa-calendar"></i>
-                    <h3 class="box-title">日历</h3>
-                    <!-- tools box -->
-                    <div class="pull-right box-tools">
-                        <!-- button with a dropdown -->
-                        @*<div class="btn-group">
-                                <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-bars"></i>
-                                </button>
-                                <ul class="dropdown-menu pull-right" role="menu">
-                                    <li><a href="#">Add new event</a></li>
-                                    <li><a href="#">Clear events</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">View calendar</a></li>
-                                </ul>
-                            </div>*@
-                        <button type="button" class="btn btn-success btn-sm" data-widget="collapse">
-                            <i class="fa fa-minus"></i>
-                        </button>
-                        <button type="button" class="btn btn-success btn-sm" data-widget="remove">
-                            <i class="fa fa-times"></i>
-                        </button>
+            </section>
+            <!-- /.Left col -->
+            <!-- right col (We are only adding the ID to make the widgets sortable)-->
+            <section class="col-lg-6 connectedSortable">
+                <!-- TO DO List -->
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <i class="fa fa-users"></i>
+                        <h3 class="box-title">排班表</h3>
                     </div>
-                    <!-- /. tools -->
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <!-- See dist/js/pages/dashboard.js to activate the todoList plugin -->
+                        <iframe src="http://www.pl-kj.com/NO1.htm" style="width:100%;height:380px;border:none;" id="excel"></iframe>
+                    </div>
+                    <!-- /.box-body -->
+
                 </div>
-                <!-- /.box-header -->
-                <div class="box-body no-padding">
-                    <!--The calendar -->
-                    <div id="calendar" style="width: 100%"></div>
+                <!-- /.box -->
+                <!-- Calendar -->
+                <div class="box box-solid bg-green-gradient">
+                    <div class="box-header">
+                        <i class="fa fa-calendar"></i>
+                        <h3 class="box-title">日历</h3>
+                        <!-- tools box -->
+                        <div class="pull-right box-tools">
+                            <button type="button" class="btn btn-success btn-sm" data-widget="collapse">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm" data-widget="remove">
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </div>
+                        <!-- /. tools -->
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body no-padding">
+                        <!--The calendar -->
+                        <div id="calendar" style="width: 100%"></div>
+                    </div>
                 </div>
-            </div>
-            <!-- /.box -->
-        </section>
-        <!-- right col -->
-    </div>
-    <!-- /.row (main row) -->
-</section>
-<!-- /.content -->
+                <!-- /.box -->
+            </section>
+            <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+    </section>
+    <!-- /.content -->
+</div>
+
 
 <script type="text/javascript">
 
-        var mydate = new Date();
-        var d = mydate.getDate();
-        var t = parseInt(d);
-        if (t < 8) {
-            frames.excel.src = "http://www.pl-kj.com/NO1.htm";
-        }
-        if (t <15 && t>7) {
-            frames.excel.src = "http://www.pl-kj.com/NO2.htm";
-        }
-        if (t < 22 && t > 14) {
-            frames.excel.src = "http://www.pl-kj.com/NO3.htm";
-        }
-        if (t <= 31 && t > 21) {
-            frames.excel.src = "http://www.pl-kj.com/NO4.htm";
-        }
+    var mydate = new Date();
+    var d = mydate.getDate();
+    var t = parseInt(d);
+    if (t < 8) {
+        frames.excel.src = "http://www.pl-kj.com/NO1.htm";
+    }
+    if (t < 15 && t > 7) {
+        frames.excel.src = "http://www.pl-kj.com/NO2.htm";
+    }
+    if (t < 22 && t > 14) {
+        frames.excel.src = "http://www.pl-kj.com/NO3.htm";
+    }
+    if (t <= 31 && t > 21) {
+        frames.excel.src = "http://www.pl-kj.com/NO4.htm";
+    }
 
 </script>

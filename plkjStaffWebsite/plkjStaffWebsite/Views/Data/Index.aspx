@@ -103,141 +103,69 @@
                 <!-- sidebar: style can be found in sidebar.less -->
                 <section class="sidebar">
                     <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="../../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <div class="pull-left info">
+                            <p>培洛科技</p>
+                            <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
+                        </div>
+                    </div>
+                    <!-- search form -->
 
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     <ul class="sidebar-menu" data-widget="tree">
-                        <li class="header">主菜单</li>
-                        <li class="active treeview">
+                        <li>
                             <a href="/">
                                 <i class="fa fa-dashboard"></i><span>首页</span>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)">
-                                <i class="fa fa-th"></i><span>小工具(网格布局)</span>
-                                <span class="pull-right-container">
-                                    <small class="label pull-right bg-green">null</small>
-                                </span>
+                            <a href="/Home/Contact">
+                                <i class="fa fa-th"></i><span>下载中心</span>
                             </a>
                         </li>
-                        <li class="treeview">
-                            <a href="javascript:void(0)">
-                                <i class="fa fa-pie-chart"></i>
-                                <span>图表</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i>ChartJS</a></li>
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="javascript:void(0)">
-                                <i class="fa fa-laptop"></i>
-                                <span>UI 元素</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i>General</a></li>
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="javascript:void(0)">
-                                <i class="fa fa-edit"></i><span>表单</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i>General Elements</a></li>
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="javascript:void(0)">
-                                <i class="fa fa-table"></i><span>表格</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i>Simple tables</a></li>
-                                <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i>Data tables</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <i class="fa fa-calendar"></i><span>日历</span>
-                                <span class="pull-right-container">
-                                    <small class="label pull-right bg-red">3</small>
-                                    <small class="label pull-right bg-blue">17</small>
-                                </span>
+                        <li class="active">
+                            <a href="/Data/Index">
+                                <i class="fa fa-pie-chart"></i><span>每日数据</span>
                             </a>
                         </li>
                         <li>
                             <a href="javascript:void(0)">
-                                <i class="fa fa-envelope"></i><span>邮箱</span>
-                                <span class="pull-right-container">
-                                    <small class="label pull-right bg-yellow">12</small>
-                                    <small class="label pull-right bg-green">16</small>
-                                    <small class="label pull-right bg-red">5</small>
-                                </span>
+                                <i class="fa fa-laptop"></i><span>注册账号</span>
                             </a>
                         </li>
-                        <li class="treeview">
-                            <a href="javascript:void(0)">
-                                <i class="fa fa-folder"></i><span>例子</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
+                        <li>
+                            <a href="Home/About">
+                                <i class="fa fa-edit"></i><span>幸运抽奖</span>
                             </a>
-                            <ul class="treeview-menu">
-                                <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i>Invoice</a></li>
-                            </ul>
                         </li>
-                        <li class="treeview">
-                            <a href="javascript:void(0)">
-                                <i class="fa fa-share"></i><span>多级菜单</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
+                        <li>
+                            <a href="http://www.pl-kj.com/excel.htm">
+                                <i class="fa fa-calendar"></i><span>排班表</span>
                             </a>
-                            <ul class="treeview-menu">
-                                <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i>Level One</a></li>
-                                <li class="treeview">
-                                    <a href="javascript:void(0)">
-                                        <i class="fa fa-circle-o"></i>Level One
-                                    <span class="pull-right-container">
-                                        <i class="fa fa-angle-left pull-right"></i>
-                                    </span>
-                                    </a>
-                                    <ul class="treeview-menu">
-                                        <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i>Level Two</a></li>
-                                        <li class="treeview">
-                                            <a href="javascript:void(0)">
-                                                <i class="fa fa-circle-o"></i>Level Two
-                                            <span class="pull-right-container">
-                                                <i class="fa fa-angle-left pull-right"></i>
-                                            </span>
-                                            </a>
-                                            <ul class="treeview-menu">
-                                                <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i>Level Three</a></li>
-                                                <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i>Level Three</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i>Level One</a></li>
-                            </ul>
                         </li>
-                        <li><a href="http://www.pl-kj.com/help.html"><i class="fa fa-book"></i><span>帮助文档</span></a></li>
+                        <li>
+                            <a href="/InformTable/Index">
+                                <i class="fa fa-table"></i><span>客户表</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/zq_CustomerTable/Index">
+                                <i class="fa fa-table"></i><span>通知公告</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Home/Editor">
+                                <i class="fa fa-circle-o"></i><span>编辑器</span>
+                            </a>
+                        </li>
+
                     </ul>
                 </section>
                 <!-- /.sidebar -->
             </aside>
-
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->

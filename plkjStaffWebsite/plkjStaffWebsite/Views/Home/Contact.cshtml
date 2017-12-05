@@ -1,67 +1,147 @@
 ﻿@{
     ViewBag.Title = "软件下载";
 }
-<!-- Content Header (Page header) -->
-<section class="content-header">
-    <h1>
-        软件下载
-        <small>内部软件</small>
-    </h1>
-    <ol class="breadcrumb">
-        <li><a href="@Url.Action("Index","Home")"><i class="fa fa-dashboard"></i> 首页</a></li>
-        <li class="active">软件下载</li>
-    </ol>
-</section>
-<section class="content">
-    <div class="row content">
-        <div class="col-sm-6 col-md-6 col-lg-3 platform">
-            <img src="~/dist/img/entry.png" alt="题目录入">
-            <section class="desc">
-                <h3>录题工具</h3>
-                <ul>
-                    <li>录入题目</li>
-                    <li>录入题目答案</li>
-                </ul>
-                <a href="~/APP_LUTI/录题工具.application">下载</a>
-            </section>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-3 platform">
-            <img src="~/dist/img/arrange.png" alt="题目整理">
-            <section class="desc">
-                <h3>题目整理</h3>
-                <ul>
-                    <li>修改格式</li>
-                    <li>培洛自组卷</li>
-                    <li>专项训练</li>
-                    <li>题目分类、录音、视频等</li>
-                </ul>
-                <a href="~/WpfApplication题目整理/WpfApplication题目整理.application">下载</a>
-            </section>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-3 platform">
-            <img src="~/dist/img/corrections.png" alt="批作业">
-            <section class="desc">
-                <h3>批作业</h3>
-                <ul>
-                    <li>添任务、调任务</li>
-                    <li>作业作业、反馈记录</li>
-                    <li>学生分析</li>
-                    <li>改错题、积分管理</li>
-                </ul>
-                <a href="/APP_NewRevise/培洛科技-批作业.application">下载</a>
-            </section>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-3 platform">
-            <img src="~/dist/img/gift.png" alt="奖品管理">
-            <section class="desc">
-                <h3>奖品管理</h3>
-                <ul>
-                    <li>更新学生软件上的奖品</li>
-                    <li>更改图片、价格等等</li>
-                </ul>
-                <a href="~/rewardManage/Wpf积分兑换管理.application">下载</a>
-            </section>
-        </div>
 
-    </div>
-</section>
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="~/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>培洛科技</p>
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+        </div>
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="不能用的搜索">
+                <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li>
+                <a href="@Url.Action("Index","Home")">
+                    <i class="fa fa-dashboard"></i> <span>首页</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="@Url.Action("Contact","Home")">
+                    <i class="fa fa-th"></i> <span>下载中心</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Data")">
+                    <i class="fa fa-pie-chart"></i> <span>每日数据</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="fa fa-laptop"></i> <span>注册账号</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("About", "Home")">
+                    <i class="fa fa-edit"></i> <span>幸运抽奖</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.pl-kj.com/excel.htm">
+                    <i class="fa fa-calendar"></i> <span>排班表</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "InformTable")">
+                    <i class="fa fa-table"></i> <span>客户表</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "zq_CustomerTable")">
+                    <i class="fa fa-table"></i> <span>通知公告</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Editor", "Home")">
+                    <i class="fa fa-circle-o"></i> <span>编辑器</span>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <section class="content-header">
+        <h1>
+            软件下载
+            <small>内部软件</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="@Url.Action("Index","Home")"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li class="active">软件下载</li>
+        </ol>
+    </section>
+    <section class="content">
+        <div class="row content">
+            <div class="col-sm-6 col-md-6 col-lg-3 platform">
+                <img src="~/dist/img/entry.png" alt="题目录入">
+                <section class="desc">
+                    <h3>录题工具</h3>
+                    <ul>
+                        <li>录入题目</li>
+                        <li>录入题目答案</li>
+                    </ul>
+                    <a href="~/APP_LUTI/录题工具.application">下载</a>
+                </section>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 platform">
+                <img src="~/dist/img/arrange.png" alt="题目整理">
+                <section class="desc">
+                    <h3>题目整理</h3>
+                    <ul>
+                        <li>修改格式</li>
+                        <li>培洛自组卷</li>
+                        <li>专项训练</li>
+                        <li>题目分类、录音、视频等</li>
+                    </ul>
+                    <a href="~/WpfApplication题目整理/WpfApplication题目整理.application">下载</a>
+                </section>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 platform">
+                <img src="~/dist/img/corrections.png" alt="批作业">
+                <section class="desc">
+                    <h3>批作业</h3>
+                    <ul>
+                        <li>添任务、调任务</li>
+                        <li>作业作业、反馈记录</li>
+                        <li>学生分析</li>
+                        <li>改错题、积分管理</li>
+                    </ul>
+                    <a href="/APP_NewRevise/培洛科技-批作业.application">下载</a>
+                </section>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 platform">
+                <img src="~/dist/img/gift.png" alt="奖品管理">
+                <section class="desc">
+                    <h3>奖品管理</h3>
+                    <ul>
+                        <li>更新学生软件上的奖品</li>
+                        <li>更改图片、价格等等</li>
+                    </ul>
+                    <a href="~/rewardManage/Wpf积分兑换管理.application">下载</a>
+                </section>
+            </div>
+
+        </div>
+    </section>
+
+</div>

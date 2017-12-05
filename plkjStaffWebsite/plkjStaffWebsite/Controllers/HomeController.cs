@@ -26,7 +26,10 @@ namespace plkjStaffWebsite.Controllers
         {
             return View();
         }
-
+        public ActionResult Editor()
+        {
+            return View();
+        }
         public ActionResult Edit(int? id)
         {
             if (id == null)

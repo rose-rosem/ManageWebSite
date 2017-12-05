@@ -168,6 +168,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InformTableController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\zq_CustomerTableController.cs" />
     <Compile Include="Global.asax.cs">
@@ -203,9 +204,27 @@
       <DependentUpon>Customer.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Inform.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inform.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Inform.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inform.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Inform.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inform.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\zq_CustomerTable.cs">
       <DependentUpon>Customer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\zq_InformTable.cs">
+      <DependentUpon>Inform.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -6835,6 +6854,16 @@
       <DependentUpon>Customer.edmx</DependentUpon>
       <LastGenOutput>Customer.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\Inform.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Inform.edmx</DependentUpon>
+      <LastGenOutput>Inform.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Inform.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Inform.edmx</DependentUpon>
+      <LastGenOutput>Inform.cs</LastGenOutput>
+    </Content>
     <Content Include="plugins\bootstrap-slider\bootstrap-slider.js" />
     <Content Include="plugins\bootstrap-slider\slider.css" />
     <Content Include="plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.all.js" />
@@ -7580,6 +7609,13 @@
     <Content Include="Models\Customer.edmx.diagram">
       <DependentUpon>Customer.edmx</DependentUpon>
     </Content>
+    <EntityDeploy Include="Models\Inform.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Inform.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Inform.edmx.diagram">
+      <DependentUpon>Inform.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -7635,6 +7671,12 @@
     <Content Include="Views\zq_CustomerTable\Details.cshtml" />
     <Content Include="Views\zq_CustomerTable\Edit.cshtml" />
     <Content Include="Views\zq_CustomerTable\Index.cshtml" />
+    <Content Include="Views\Home\Editor.cshtml" />
+    <Content Include="Views\InformTable\Create.cshtml" />
+    <Content Include="Views\InformTable\Delete.cshtml" />
+    <Content Include="Views\InformTable\Details.cshtml" />
+    <Content Include="Views\InformTable\Edit.cshtml" />
+    <Content Include="Views\InformTable\Index.cshtml" />
     <Content Include="Views\Home\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
