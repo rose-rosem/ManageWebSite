@@ -41,9 +41,9 @@
                 <!-- Logo -->
                 <a href="/" class="logo">
                     <!-- mini logo for sidebar mini 50x50 pixels -->
-                    <span class="logo-mini"><b>A</b>LT</span>
+                    <span class="logo-mini"><b>P</b>LKJ</span>
                     <!-- logo for regular state and mobile devices -->
-                    <span class="logo-lg"><b>Admin</b>LTE</span>
+                    <span class="logo-lg"><b>Bacon</b>Locke</span>
                 </a>
 
                 <!-- Header Navbar: style can be found in header.less -->
@@ -147,12 +147,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/InformTable/Index">
+                            <a href="/zq_CustomerTable/Index">
                                 <i class="fa fa-table"></i><span>客户表</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/zq_CustomerTable/Index">
+                            <a href="/InformTable/Index">
                                 <i class="fa fa-table"></i><span>通知公告</span>
                             </a>
                         </li>
@@ -228,7 +228,7 @@
                                                     </asp:GridView>
                                                 </div>
                                                 <!-- /.col -->
-                                                <div class="col-md-3">
+                                                <div class="col-md-2">
                                                     <p class="text-center">
                                                         <strong>作业批改表</strong>
                                                         <asp:GridView ID="GridViewRevise" runat="server">
@@ -236,7 +236,7 @@
                                                     </p>
                                                 </div>
                                                 <!-- /.col -->
-                                                <div class="col-md-3">
+                                                <div class="col-md-4">
                                                     <p class="text-center">
                                                         <strong>学生做题数量表</strong>
                                                     </p>

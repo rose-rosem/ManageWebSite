@@ -1,45 +1,169 @@
 ﻿@model IEnumerable<plkjStaffWebsite.Models.zq_CustomerTable>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "客户表";
 }
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="~/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>培洛科技</p>
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+        </div>
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="不能用的搜索">
+                <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li>
+                <a href="@Url.Action("Index","Home")">
+                    <i class="fa fa-dashboard"></i> <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Contact","Home")">
+                    <i class="fa fa-th"></i> <span>下载中心</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Data")">
+                    <i class="fa fa-pie-chart"></i> <span>每日数据</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="fa fa-laptop"></i> <span>注册账号</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("About", "Home")">
+                    <i class="fa fa-edit"></i> <span>幸运抽奖</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.pl-kj.com/excel.htm">
+                    <i class="fa fa-calendar"></i> <span>排班表</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="@Url.Action("Index", "zq_CustomerTable")">
+                    <i class="fa fa-table"></i> <span>客户表</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "InformTable")">
+                    <i class="fa fa-table"></i> <span>通知公告</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Editor", "Home")">
+                    <i class="fa fa-circle-o"></i> <span>编辑器</span>
+                </a>
+            </li>
 
-<h2>Index</h2>
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.customerName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.customerPhone)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.customerMessage)
-        </th>
-        <th></th>
-    </tr>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            客户表
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.customerName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.customerPhone)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.customerMessage)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.id })
-        </td>
-    </tr>
-}
+            <small>官网填写</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="@Url.Action("Index","Home")"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li class="active">客户表</li>
+        </ol>
+    </section>
 
-</table>
+    <!-- Main content -->
+    <section class="content">
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-success">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">总览</h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+
+                        <p>
+                            @Html.ActionLink("添加新的客户信息", "Create")
+                        </p>
+                        <table class="table">
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.customerName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.customerPhone)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.customerMessage)
+                                </th>
+                                <th></th>
+                            </tr>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.customerName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.customerPhone)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.customerMessage)
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("编辑", "Edit", new { id = item.id }) |
+                                        @Html.ActionLink("详情", "Details", new { id = item.id }) |
+                                        @Html.ActionLink("删除", "Delete", new { id = item.id })
+                                    </td>
+                                </tr>
+                            }
+
+                        </table>
+                        <!-- /.row -->
+                    </div>
+                    <!-- ./box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

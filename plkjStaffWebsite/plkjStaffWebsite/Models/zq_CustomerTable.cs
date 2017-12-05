@@ -23,10 +23,13 @@ namespace plkjStaffWebsite.Models
         public string customerName { get; set; }
 
         [Required]
+        [Phone]
+        [RegularExpression(@"^1(3|4|5|7|8)\d{9}$", ErrorMessage = "请填写正确的电话")]
         [Display(Name = "客户电话")]
         public string customerPhone { get; set; }
 
         [Display(Name = "客户留言")]
+        [StringLength(50, ErrorMessage = "最多只能输入50个字哦")]
         public string customerMessage { get; set; }
     }
 }
