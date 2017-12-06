@@ -4,7 +4,121 @@
     ViewBag.Title = "已锁定";
 }
 
-<hgroup>
-    <h1 class="text-danger">已锁定。</h1>
-    <h2 class="text-danger">此帐户已锁定，请稍后重试。</h2>
-</hgroup>
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="~/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>培洛科技</p>
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+        </div>
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="不能用的搜索">
+                <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="active">
+                <a href="@Url.Action("Index","Home")">
+                    <i class="fa fa-dashboard"></i> <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Contact","Home")">
+                    <i class="fa fa-th"></i> <span>下载中心</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Data")">
+                    <i class="fa fa-pie-chart"></i> <span>每日数据</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="fa fa-laptop"></i> <span>注册账号</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("About", "Home")">
+                    <i class="fa fa-edit"></i> <span>幸运抽奖</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.pl-kj.com/excel.htm">
+                    <i class="fa fa-calendar"></i> <span>排班表</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "zq_CustomerTable")">
+                    <i class="fa fa-table"></i> <span>客户表</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "InformTable")">
+                    <i class="fa fa-table"></i> <span>通知公告</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Editor", "Home")">
+                    <i class="fa fa-circle-o"></i> <span>编辑器</span>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        @*<h1>
+            处理你的请求时出错.
+        </h1>*@
+        <ol class="breadcrumb">
+            <li><a href="@Url.Action("Index","Home")"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li class="active">锁定</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <div class="error-page">
+            <h2 class="headline text-red" style="margin-right:10px;">Error</h2>
+            <div class="error-content">
+                <h3><i class="fa fa-warning text-red"></i> 哎呀! 此帐户已锁定,请稍后重试.</h3>
+                <p>
+                    我们将马上解决这个问题.
+                    同时, 你可以<a href="@Url.Action("Index","Home")">返回仪表板</a> 或尝试使用搜索表单.
+                </p>
+
+                <form class="search-form" action="https://www.baidu.com/s" target="_self" method="get">
+                    <div class="input-group">
+                        <input type="text" name="wd" class="form-control" placeholder="请输入要搜索的内容" >
+                        <div class="input-group-btn">
+                            <button type="submit" name="submit" class="btn btn-danger btn-flat">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.input-group -->
+                </form>
+            </div>
+        </div>
+        <!-- /.error-page -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

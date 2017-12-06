@@ -17,6 +17,11 @@ namespace plkjStaffWebsite.Controllers
             return View(db.zq_CustomerTable.ToList());
         }
 
+        public ActionResult Test()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             return View();

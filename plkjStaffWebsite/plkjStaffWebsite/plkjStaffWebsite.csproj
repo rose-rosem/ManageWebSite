@@ -237,6 +237,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-plkjStaffWebsite-20170908125938.mdf" />
+    <Content Include="App_Data\aspnet-plkjStaffWebsite-20170908125938_log.ldf">
+      <DependentUpon>aspnet-plkjStaffWebsite-20170908125938.mdf</DependentUpon>
+    </Content>
     <Content Include="bower_components\bootstrap-colorpicker\dist\css\bootstrap-colorpicker.css" />
     <Content Include="bower_components\bootstrap-colorpicker\dist\css\bootstrap-colorpicker.min.css" />
     <Content Include="bower_components\bootstrap-colorpicker\dist\img\bootstrap-colorpicker\alpha-horizontal.png" />
@@ -7006,6 +7010,7 @@
     <Content Include="plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="plugins\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="plugins\timepicker\bootstrap-timepicker.min.js" />
+    <Content Include="Properties\PublishProfiles\pomolo.pubxml.user" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="bower_components\bootstrap-colorpicker\.bower.json" />
@@ -7680,9 +7685,10 @@
     <Content Include="Views\InformTable\Index.cshtml" />
     <Content Include="Views\Home\Edit.cshtml" />
     <Content Include="Views\InformTable\Iframe.cshtml" />
+    <Content Include="Views\Home\Test.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="Views\ApplicationUsers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
